@@ -1,0 +1,1436 @@
+/*zero style*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0
+}
+
+*,
+:after,
+:before {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+:active,
+:focus {
+    outline: 0
+}
+
+a:active,
+a:focus {
+    outline: 0
+}
+
+aside,
+footer,
+header,
+nav {
+    display: block
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+button,
+input,
+textarea {
+    font-family: inherit
+}
+
+input::-ms-clear {
+    display: none
+}
+
+button {
+    cursor: pointer
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+
+a,
+a:visited {
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: none
+}
+
+ul li {
+    list-style: none
+}
+
+img {
+    vertical-align: top
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400
+}
+
+/*----------*/
+/*-- base --*/
+.wrapper,
+.wrapper-form {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    overflow-y: hidden;
+}
+
+.s-btn {
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.btnanimate:hover {
+    transform: scale(1.04);
+    transition: 0.5s;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(500px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fadeInRight {
+    animation-name: fadeInRight;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.fadeInLeft {
+    animation-name: fadeInLeft;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+
+/*-- header --*/
+.header {
+    width: 100%;
+    background-color: #eb382a;
+    border-radius: 0 0 60px 60px;
+    padding: 3%;
+    background-image: url(src/img/deutsch_skill_logo-big.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.header-navigation {
+    background-color: #FCD338;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    position: relative;
+    z-index: 300;
+}
+
+.navigation-logo img {
+    height: 3vw;
+}
+
+.header-navigation-large {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*padding: 10px 30px;*/
+    padding: 0.8% 2.3%;
+}
+
+.navigation-navbar--pill {
+    color: #000;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 1.3vw;
+    margin: 0 30px;
+}
+
+.navigation-navbar--pill:hover {
+    text-decoration: underline solid 1px #000;
+}
+
+.navigation-links--socialbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    padding: 8%;
+    border-radius: 50%;
+}
+
+.navigation-links--socialbtn img {
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+.navigation-lang--current {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    padding: 1%;
+    width: 7vw;
+    height: 2.1vw;
+    border-radius: 1.2vw;
+}
+
+.navigation-lang--current img {
+    height: 1.5vw;
+}
+
+.navigation-lang--dropdown {
+    display: none;
+}
+
+.navigation-lang--lang {
+    margin-left: 10px;
+    color: #FCD338;
+    background-color: black;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.navigation-links {
+    display: flex;
+}
+
+.navigation-links--socialbtn {
+    margin: 0 10px;
+}
+
+.header-navigation-mobile {
+    display: none;
+    justify-content: space-between;
+    padding: 8px 15px;
+    border-radius: 0 0 10px 10px;
+}
+
+.navigation-mobile--burgerpill {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.navigation-mobile--burgerpill img {
+    width: 20px;
+    height: 20px;
+}
+
+.close-form {
+    float: right;
+    /* justify-content: center; */
+    border: solid 2px #FCD338;
+    align-items: center;
+    background: #000;
+    padding: 10px;
+    margin-top: -2%;
+    margin-right: -11%;
+    border-radius: 50%;
+    cursor: pointer;
+    /* position: absolute;
+    left: 73%;
+    top: 4%; */
+
+}
+
+.cross {
+    width: 30px;
+    height: 30px;
+}
+
+.navigation-mobile--buttons {
+    display: flex;
+    cursor: pointer;
+}
+
+.navigation-navbar-mobile {
+    width: 100%;
+    height: auto;
+    margin: 5% 1% 2%;
+    padding: 4.5vh 1% 2%;
+    position: absolute;
+    left: -1%;
+    top: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FCD338;
+    z-index: -1;
+}
+
+.header-content {
+    display: flex;
+}
+
+.header-title {
+    color: #FFF;
+    font-size: 9vw;
+    font-family: 'Object Sans', sans-serif;
+    font-weight: 800;
+    letter-spacing: 4.2px;
+    text-transform: uppercase;
+}
+
+.header-description {
+    color: #FFF;
+    font-size: 2vw;
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin: 8% 0;
+}
+
+.header-content--images {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.clodchat {
+    font-size: 1.6vw;
+    font-family: 'Object Sans', sans-serif;
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: 0.75px;
+    padding: 40px;
+    margin: 15px;
+}
+
+.dialog1 {
+    background: #FCD338;
+    position: relative;
+    border-radius: 10px 10px 10px 0;
+    display: inline-flex;
+    text-align: left;
+}
+
+.dialog1:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: calc(100% - 31px);
+    top: calc(100% - 20px);
+    border-top: 14px solid transparent;
+    border-left: 31px solid #FCD338;
+    border-bottom: 26px solid transparent;
+}
+
+.dialog2 {
+    color: #fff;
+    margin-right: 10%;
+    background: #000;
+    position: relative;
+    border-radius: 10px 10px 0 10px;
+    display: inline-flex;
+    text-align: right;
+}
+
+.dialog3 {
+    background: #FCD338;
+    position: relative;
+    border-radius: 10px 10px 10px 0;
+    display: inline-flex;
+    text-align: left;
+}
+
+.dialog2:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: calc(100% - 32px);
+    top: calc(100% - 14px);
+    border-top: 10px solid transparent;
+    border-right: 32px solid #000;
+    border-bottom: 26px solid transparent;
+}
+
+.dialog3:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: calc(100% - 31px);
+    top: calc(100% - 20px);
+    border-top: 14px solid transparent;
+    border-left: 31px solid #FCD338;
+    border-bottom: 26px solid transparent;
+}
+
+.header-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #000;
+    padding: 0.5vw;
+    border-radius: 30px;
+}
+
+.header-button--text,
+.button--text {
+    color: #FFF;
+    margin: 5px 20px;
+    font-size: 1.8vw;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.button--img {
+    height: 2vw;
+}
+
+.coursescards {
+    width: 100%;
+    /*height: 90vh;*/
+    border-radius: 60px;
+    padding: 3%;
+    border: #000 1px solid;
+    margin-top: 3%;
+}
+
+.coursescards-header {
+    color: #000;
+    font-size: 2.5vw;
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%;
+    margin: 0 0 3% 3%;
+    text-transform: uppercase;
+}
+
+.red {
+    color: #EB382A;
+}
+
+.yellow {
+    color: #FCD338;
+}
+
+.coursescards-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.coursescards-cards--card {
+    width: 30%;
+    border-radius: 20px;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.coursescards-cards--card:hover {
+    scale: 1.04;
+    box-shadow: 3px 3px 7px #464545db;
+    transition: 0.5s;
+}
+
+.card1 {
+    background-color: #000;
+    color: #FFF;
+    background-image: url(src/img/Group_b.svg);
+    background-repeat: no-repeat;
+}
+
+.card2 {
+    background-color: #FCD338;
+    background-image: url(src/img/Group_y.svg);
+    background-repeat: no-repeat;
+}
+
+.card3 {
+    background-color: #EB382A;
+    color: #FFF;
+    background-image: url(src/img/Group_r.svg);
+    background-repeat: no-repeat;
+    background-position-x: -3px;
+    background-position-y: -1px;
+}
+
+.card-header {
+    display: flex;
+}
+
+.card-header--logo {
+    width: 45%;
+}
+
+.card-header--content {
+    width: 55%;
+    padding: 0 0 0 3%;
+}
+
+.level {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: 'Object Sans', sans-serif;
+    text-align: center;
+    margin-bottom: 5%;
+
+}
+
+.card-token {
+    display: flex;
+    align-items: center;
+    /*margin: 10px 0;*/
+    padding: 10px 0 10px 10px;
+}
+
+.session,
+.period,
+.price {
+    border-bottom: 1px solid #FFF;
+}
+
+.session2,
+.period2,
+.price2 {
+    border-bottom: 1px solid #000;
+}
+
+.card-token p {
+    margin-left: 10%;
+    font-size: 1.1vw;
+    font-family: 'Manrope', sans-serif;
+}
+
+.cadr-description {
+    border-top: 1px solid #FFF;
+    margin-top: 5%;
+    padding-top: 20px;
+    margin-bottom: 10%;
+}
+
+
+.cadr-description2 {
+    border-top: 1px solid #000;
+    margin-top: 5%;
+    padding-top: 20px;
+    margin-bottom: 10%;
+    margin-bottom: 10%;
+}
+
+.cadr-description--title {
+    font-size: 1.4vw;
+    font-family: 'Object Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.cadr-description--text {
+    font-size: 1.1vw;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.card-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #FFF;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 0 39% 0 0;
+}
+
+.card-button2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #000;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 0 40% 0 0;
+}
+
+.card-button--text {
+    font-size: 1vw;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-right: 5%;
+}
+
+.card-button--img {
+    width: 1rem;
+}
+
+.club {
+    width: 100%;
+    display: flex;
+    float: left;
+    border-radius: 60px;
+    border: #000 1px solid;
+    margin-top: 3%;
+}
+
+.club-img {
+    width: 70%;
+    background-image: url(src/img/shutterstock_conversation.png);
+    background-size: cover;
+    border-radius: 60px;
+}
+
+.club-content {
+    padding: 7%;
+}
+
+.club-content--title,
+.teachers-content--title,
+.invite-content--title {
+    color: #000;
+    font-size: 2.5vw;
+    font-family: 'Object Sans', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.club-content--description,
+.teachers-content--text,
+.invite-content--text {
+    color: #000;
+    font-size: 1.5vw;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    line-height: 118%;
+    margin: 5% 0 5% 0;
+}
+
+.club-content--tokens {
+    margin-bottom: 7%;
+}
+
+.token {
+    width: 40%;
+    display: inline-flex;
+    align-items: center;
+    padding: 1vw;
+    background: #000;
+    color: #FFF;
+    margin: 3%;
+    border-radius: 30px;
+    margin-bottom: 5%;
+    font-size: 1.2vw;
+    font-family: 'Manrope', sans-serif;
+}
+
+.token-img {
+    margin-right: 10%;
+}
+
+.club-content--btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #EB382A;
+    padding: 0.5vw;
+    border-radius: 30px;
+}
+
+.button--text {
+    color: #FFF;
+}
+
+.teachers {
+    width: 100%;
+    display: flex;
+    float: left;
+    border-radius: 60px;
+    border: #000 1px solid;
+    margin-top: 3%;
+}
+
+.teachers-img {
+    width: 90%;
+    background-image: url(src/img/shutterstock_2.png);
+    background-size: cover;
+    background-position: right;
+    border-radius: 60px;
+}
+
+.teachers-content {
+    padding: 7% 7% 5% 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teachers-content--title {
+    width: 100%;
+}
+
+.teachers-content--img {
+    width: 30%;
+    height: auto;
+}
+
+.teachers-profiles {
+    width: 100%;
+    display: flex;
+    float: left;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.profile {
+    padding: 20% 4% 3%;
+    width: 49%;
+    border-radius: 60px;
+    position: relative;
+    z-index: 1;
+}
+
+.profile:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 60px;
+    /*background: linear-gradient(0deg, rgba(24, 24, 24, 0.97) 37%, rgba(250, 250, 250, 0) 74%);*/
+    background: rgb(24, 24, 24);
+    background: linear-gradient(0deg, rgba(24, 24, 24, 1) 15%, rgba(250, 250, 250, 0) 61%);
+    z-index: 2;
+}
+
+.teachers-profiles--victoria {
+    background-image: url(src/img/t1.jpg);
+    background-size: cover;
+}
+
+.teachers-profiles--alex {
+    background-image: url(src/img/t2.jpg);
+    background-position: 48% 0;
+    background-size: cover;
+}
+
+.profile-content {
+    position: relative;
+    z-index: 3;
+}
+
+.profiles-name {
+    display: flex;
+    align-items: center;
+}
+
+.profiles-name h3 {
+    color: #FFF;
+    font-size: 1.5vw;
+    font-family: 'Object Sans', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 3% 0 0;
+}
+
+.profiles-age {
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 1vw;
+    font-family: 'Object Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    background-color: #fff;
+}
+
+.profiles-exp {
+    display: flex;
+    align-items: center;
+    margin: 1% 0 2%;
+}
+
+.profiles-exp--img {
+    margin-right: 3%;
+}
+
+.profiles-exp--text {
+    color: #FFF;
+    font-size: 1vw;
+    font-family: 'Manrope', sans-serif;
+}
+
+.profiles-education {
+    border-top: 1px solid #FFF;
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+}
+
+.profiles-education--block1,
+.profiles-education--block2 {
+    display: flex;
+}
+
+.profiles-education--text {
+    padding-left: 30px;
+}
+
+.profiles-education--text p {
+    margin: 10px 0;
+    font-size: 0.8vw;
+}
+
+.education-title {
+    display: flex;
+    align-items: center;
+    margin-left: -30px;
+}
+
+.education-title--img {
+    margin-right: 10px;
+}
+
+.education-title--val {
+    font-size: 1vw;
+}
+
+.profiles-education--lang p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.invite {
+    width: 100%;
+    display: flex;
+    float: left;
+    border-radius: 60px;
+    background: #000;
+    margin: 3% 0;
+}
+
+.invite-img {
+    width: 84%;
+    background-image: url(src/img/Group_b.svg);
+    background-repeat: no-repeat;
+    background-position: -12px -7px;
+    background-size: cover;
+    border-radius: 60px;
+}
+
+.invite-content {
+    padding: 7%;
+}
+
+.invite-content--title {
+    color: #FFF;
+}
+
+.invite-content--text {
+    color: #FFF;
+}
+
+.invite-content--img {
+    position: relative;
+    /* top: 317%; */
+    left: -16%;
+    bottom: -95px;
+}
+
+.invite-content--btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #FCD338;
+    padding: 5px;
+    border-radius: 30px;
+    margin-top: 10%;
+}
+
+.button--text {
+    color: #000;
+}
+
+.contact-form {
+    width: 50%;
+    margin: 5% auto;
+    padding: 1% 4% 2%;
+    color: #FFF;
+    background: #000;
+    border-radius: 30px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.5em;
+}
+
+.contact-form-header {
+    color: #FFF;
+    font-size: 2em;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    line-height: 118%;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+.contact-form input {
+    width: 100%;
+    font-size: 1.3em;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+}
+
+.contact-form input:focus {
+    box-shadow: 0 0 15px #FFF;
+}
+
+.contact-form input:hover {
+    box-shadow: 0 0 15px #FFF;
+}
+
+.form-message {
+    width: 100%;
+    height: 120px;
+    font-size: 1.3em;
+    border-radius: 20px;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+    padding: 10px 30px;
+    resize: vertical;
+}
+
+.form-message:focus {
+    box-shadow: 0 0 15px #FFF;
+}
+
+.form-message:hover {
+    box-shadow: 0 0 15px #FFF;
+}
+
+#polit-checkbox {
+    width: 15px;
+    height: 15px;
+    margin-bottom: 1vh;
+    background-color: #FCD338;
+}
+
+form a {
+    color: #FFF;
+}
+
+form a:hover {
+    text-decoration: underline 1px solid #FFF;
+}
+
+.contact-form label {
+    margin-left: 2%;
+}
+
+.submit-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #FCD338;
+    padding: 5px;
+    border-radius: 30px;
+    margin-top: 10%;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.hidden-d {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .header-title {
+        font-size: 8rem;
+    }
+
+    .header-description {
+        font-size: 1.7rem;
+    }
+
+    .navigation-lang--lang {
+        font-size: 1.3vw;
+    }
+
+    .navigation-navbar--pill {
+        font-size: 1.1rem;
+        margin: 0 20px;
+    }
+
+    .clodchat {
+        font-size: 1.3rem;
+    }
+
+    .coursescards-cards--card {
+        width: 32%;
+        border-radius: 20px;
+        padding: 2%;
+    }
+
+    .level {
+        font-size: 1.3rem;
+        padding: 8px;
+    }
+
+    .card-token {
+        padding: 8px 0 8px 8px;
+    }
+
+    .cadr-description--title {
+        font-size: 1.3rem;
+    }
+
+    .cadr-description--text {
+        font-size: 0.9rem;
+    }
+
+    .card-button,
+    .card-button2 {
+        width: 180px;
+    }
+
+    .card-button--text {
+        font-size: 0.9rem;
+    }
+
+    .club-content {
+        padding: 3%;
+    }
+
+    .club-content--title,
+    .teachers-content--title {
+        font-size: 2.3rem;
+    }
+
+    .club-img,
+    .teachers-img {
+        width: 90%;
+    }
+
+    .teachers-content {
+        padding: 3% 3% 2% 3%;
+    }
+
+    .profiles-name h3 {
+        font-size: 1.3rem;
+    }
+
+    .profiles-education--text p {
+        margin: 5px 0;
+        font-size: 0.9rem;
+    }
+
+    .education-title--val {
+        font-size: 1rem;
+    }
+
+    .profiles-education--lang p {
+        font-size: 1rem;
+        margin: 4px 0;
+    }
+
+    .invite-content {
+        padding: 3%;
+    }
+
+    .invite-content--title {
+        font-size: 2.3rem;
+    }
+
+    .teachers-content--text {
+        font-size: 1.5rem;
+    }
+
+    .invite-content--img {
+        position: relative;
+        left: -14%;
+        bottom: -54px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .header-navigation-large {
+        display: none;
+    }
+
+    .header-navigation-mobile {
+        display: flex;
+    }
+
+    .navigation-logo img {
+        height: 100%;
+    }
+
+    .navigation-navbar--pill {
+        width: 100%;
+        text-align: center;
+        padding: 1% 0;
+        border-bottom: #000 solid 1px;
+    }
+
+    .navigation-navbar--pill:hover {
+        scale: 1.02;
+        box-shadow: 0 2px 5px #464545db;
+        transition: 0.3s;
+    }
+
+    .navigation-lang--current {
+        width: 9vw;
+        height: 100%;
+    }
+
+    .navigation-lang {
+        margin-left: 15px;
+        font-size: 2vw;
+    }
+
+
+    .navigation-links {
+        display: none;
+    }
+
+    .header-title {
+        font-size: 10vw;
+    }
+
+    .header-description {
+        font-size: 3vw;
+    }
+
+    .clodchat {
+        font-size: 2vw;
+        padding: 30px;
+    }
+
+    .coursescards-cards {
+        display: block;
+    }
+
+    .coursescards-cards--card {
+        width: 80%;
+        border-radius: 20px;
+        padding: 2%;
+        margin: 20px auto;
+    }
+
+    .cadr-description--text {
+        font-size: 1.2rem;
+    }
+
+    .card-token p {
+        font-size: 1.2rem;
+    }
+
+    .token {
+        font-size: 1.2rem;
+    }
+
+    .club-content--title,
+    .teachers-content--title,
+    .invite-content--title {
+        font-size: 4vw;
+    }
+
+    .invite-content--title {
+        font-size: 3.5vw;
+    }
+
+    .profiles-name h3 {
+        font-size: 1.1rem;
+    }
+
+    .profiles-exp--text {
+        font-size: 0.95rem;
+    }
+
+    .education-title--val {
+        font-size: 0.9rem;
+    }
+
+    .club-content--description,
+    .teachers-content--text,
+    .invite-content--text {
+        font-size: 2.1vw;
+    }
+
+    .club-content--tokens {
+        width: 100%;
+    }
+
+    .invite-content--img {
+        position: relative;
+        left: -4%;
+        bottom: -35px;
+    }
+
+    .button--text {
+        font-size: 1.8vw;
+    }
+
+    .contact-form {
+        width: 60%;
+    }
+
+
+}
+
+@media screen and (max-width: 765px) {
+    .wrapper {
+        padding: 0;
+    }
+
+    .header-content--images {
+        display: none;
+    }
+
+    .header-navigation {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .navigation-lang--lang {
+        font-size: 2vw;
+        margin-left: 0;
+    }
+
+    .navigation-lang--current {
+        width: 100%;
+    }
+
+    .navigation-lang--current img {
+        display: none;
+    }
+
+    .header {
+        border-radius: 0 0 30px 30px;
+        padding: 3%;
+        padding-bottom: 5%;
+    }
+
+    .header-title {
+        font-size: 12vw;
+    }
+
+    .header-description {
+        font-size: 4vw;
+    }
+
+    .header-button--text {
+        font-size: 4vw;
+    }
+
+    .header-button--img {
+        width: 10vw;
+        height: 100%;
+    }
+
+    .coursescards,
+    .club,
+    .teachers {
+        border-radius: 30px;
+        border: none;
+    }
+
+    .button--text {
+        font-size: 3vw;
+    }
+
+    .token {
+        font-size: 3vw;
+        padding: 2vw;
+    }
+
+    .button--img {
+        height: 4vw;
+    }
+
+    .coursescards-header {
+        margin-bottom: 10vw;
+        font-size: 6vw;
+        line-height: 100%;
+    }
+
+    .coursescards-cards--card {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .card-token p {
+        font-size: 2.5vw;
+    }
+
+    .cadr-description--title {
+        font-size: 3vw;
+    }
+
+    .cadr-description--text {
+        font-size: 2vw;
+    }
+
+    .club-content--title,
+    .teachers-content--title,
+    .invite-content--title {
+        font-size: 6vw;
+        margin: 5vw 0 10vw;
+    }
+
+
+    .club {
+        flex-direction: column;
+    }
+
+    .teachers {
+        flex-direction: column-reverse;
+    }
+
+    .club-img,
+    .teachers-img {
+        width: 100%;
+        padding-bottom: 80%;
+        border-radius: 30px;
+    }
+
+    .teachers-content--img {
+        display: none;
+    }
+
+    .club-content--description,
+    .teachers-content--text,
+    .invite-content--text {
+        font-size: 3vw;
+    }
+
+    .teachers-profiles {
+        flex-direction: column;
+    }
+
+    .profile {
+        width: 100%;
+        border-radius: 30px;
+        padding-top: 50%;
+        margin-bottom: 5%;
+    }
+
+    .profile:after {
+        border-radius: 30px;
+    }
+
+    .invite {
+        border-radius: 30px;
+    }
+
+    .invite-content {
+        border-radius: 30px;
+        padding: 5% 5% 5% 37%;
+        background-color: #000;
+        background-image: url(src/img/Group_b.svg);
+        background-size: 35vw;
+        background-repeat: no-repeat;
+        align-items: end;
+        text-align: right;
+    }
+
+    .invite-img,
+    .invite-content--img {
+        display: none;
+    }
+
+    .invite-content--title {
+        font-size: 1.2rem;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+
+    .close-form {
+        padding: 3px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .navigation-lang--lang {
+        font-size: 2em;
+    }
+
+    .card-token p,
+    .token {
+        font-size: 4vw;
+    }
+
+    .cadr-description--title {
+        font-size: 5vw;
+    }
+
+    .cadr-description--text {
+        font-size: 3vw;
+    }
+
+    .club-content--description,
+    .teachers-content--text,
+    .invite-content--text {
+        font-size: 5vw;
+    }
+
+    .button--text {
+        font-size: 4vw;
+    }
+
+    .button--img {
+        height: 7vw;
+    }
+}
