@@ -24,7 +24,7 @@ $tel = trim($tel);
 $message = trim($message);
 
 // mail adress and subject
-$to = "pastuh93@gmail.com";
+$to = "deutsch.skillll@gmail.com";
 $subject = "Hello. It`s a new message from DeutchSkill site";
 
 // mail body
@@ -34,7 +34,7 @@ $messageBody .= "Phone: $phone\n";
 $messageBody .= "Message:\n$message";
 
 
-/* --- Version 1. Send to email. Working.
+//--- Version 1. Send to email. Working.
 // Send data to e-mail
 if (mail($to, $subject, $messageBody)) {
 	// sucssesful code
@@ -43,36 +43,36 @@ if (mail($to, $subject, $messageBody)) {
 	// error code
 	echo "An error occurred while sending the message.";
 }
-*/
+
 
 // --- Version 2. Send to email and telegram. TEST ----
-if (mail($to, $subject, $message)) {
-    // Ваш код для надсилання на телеграм-бот
-    $telegramBotToken = '6455102088:AAHLMwUgU5GJqfBE1JqgJY66tXmmFhiwUHA';
-    $chatId = 'YOUR_CHAT_ID';
-    $telegramMessage = "Нове повідомлення з форми:\nІм'я: $name\nЕлектронна пошта: $email\nПовідомлення: $message";
+// if (mail($to, $subject, $message)) {
+//     // Ваш код для надсилання на телеграм-бот
+//     $telegramBotToken = '6455102088:AAHLMwUgU5GJqfBE1JqgJY66tXmmFhiwUHA';
+//     $chatId = 'YOUR_CHAT_ID';
+//     $telegramMessage = "New message:\nName: $name\nMail: $email\nMessage: $message";
 
-    $telegramApiUrl = "https://api.telegram.org/bot$telegramBotToken/sendMessage?chat_id=$chatId&text=" . urlencode($telegramMessage);
+//     $telegramApiUrl = "https://api.telegram.org/bot$telegramBotToken/sendMessage?chat_id=$chatId&text=" . urlencode($telegramMessage);
 
-    // Відправка запиту до Telegram API
-    $response = file_get_contents($telegramApiUrl);
+//     // Відправка запиту до Telegram API
+//     $response = file_get_contents($telegramApiUrl);
 
-    if ($response === false) {
-      http_response_code(500);
-      echo json_encode(array('message' => 'Помилка при відправленні повідомлення на телеграм.'));
-    } else {
-      http_response_code(200);
-      echo json_encode(array('message' => 'Повідомлення успішно відправлено і на пошту, і на телеграм.'));
-    }
-  } else {
-    http_response_code(500);
-    echo json_encode(array('message' => 'Помилка при відправленні повідомлення на пошту.'));
-  } else {
-  http_response_code(403);
-  echo json_encode(array('message' => 'Виникла помилка. Спробуйте ще раз.'));
-} else {
-	// error code
-	echo "An error occurred while sending the message.";
-}
+//     if ($response === false) {
+//       http_response_code(500);
+//       echo json_encode(array('message' => 'Помилка при відправленні повідомлення на телеграм.'));
+//     } else {
+//       http_response_code(200);
+//       echo json_encode(array('message' => 'Повідомлення успішно відправлено і на пошту, і на телеграм.'));
+//     }
+//   } else {
+//     http_response_code(500);
+//     echo json_encode(array('message' => 'Помилка при відправленні повідомлення на пошту.'));
+//   } else {
+//   http_response_code(403);
+//   echo json_encode(array('message' => 'Виникла помилка. Спробуйте ще раз.'));
+// } else {
+// 	// error code
+// 	echo "An error occurred while sending the message.";
+// }
 
 ?>
