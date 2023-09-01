@@ -186,12 +186,12 @@ const langArr = {
     },
     "club-price": {
         "ru": "14 евро/час",
-        "de": "14€ pro Unterricht",
+        "de": "14€ / Unterrichtsstunde",
         "ua": "14 євро/година",
     },
     "club-group": {
         "ru": "до 10 человек",
-        "de": "Bis 10 Personen",
+        "de": "Bis zu 10 Personen",
         "ua": "до 10 чоловік",
     },
     "club-btn": {
