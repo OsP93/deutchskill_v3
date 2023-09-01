@@ -86,17 +86,17 @@ const langArr = {
     },
     "card-price-a1": {
         "ru": "12 евро/час",
-        "de": "12€/Unterrichtsstunde",
+        "de": "12€ / Unterrichtsstunde",
         "ua": "12 євро/година",
     },
     "card-price-a2": {
         "ru": "12 евро/час",
-        "de": "12€/Unterrichtsstunde",
+        "de": "12€ / Unterrichtsstunde",
         "ua": "12 євро/година",
     },
     "card-price-b1": {
         "ru": "14 евро/час",
-        "de": "14€/Unterrichtsstunde",
+        "de": "14€ / Unterrichtsstunde",
         "ua": "14 євро/година",
     },
     "card-group-a1": {
@@ -136,7 +136,7 @@ const langArr = {
     },
     "a2-text": {
         "ru": "На данном курсе у нас будет баланс между грамматикой и лексикой. Каждый урок мы разбираем грамматическую тему, но при этом и не забываем про беседу. Говорить мы будем много : для этого у нас есть много различных заданий на построение диалогов или ответы на вопросы.",
-        "de": "<br><br><br> Kennt ihr schon den A1 Deutschkurs? Das ist ein Kurs, der extra für Anfänger gemacht ist, die Deutsch als Fremdsprache lernen wollen. Da lernt man die wichtigsten Sachen für das Verstehen, Lesen, Sprechen und Schreiben. Voll praktisch für den Alltag, zum Beispiel, wie man sich vorstellt, nach dem Weg fragt, einkaufen geht oder Essen bestellt. Wir üben auch ganz einfache Grammatik und bauen uns so einen coolen Grundwortschatz auf. Damit können wir uns easy in einfachen Situationen verständigen. Der A1 Deutschkurs ist der Start, um Deutsch zu lernen, und danach können wir dann auf die nächste Stufe gehen",
+        "de": "<br><br><br>Habt ihr schon vom A2 Deutschkurs gehört? Dieser Kurs ist perfekt für diejenigen, die bereits die Grundlagen der deutschen Sprache beherrschen und ihre Kenntnisse auf das nächste Level heben möchten.Der A2- Kurs baut auf den im A1- Kurs erworbenen Fähigkeiten auf und hilft uns, unsere Deutschkenntnisse weiter zu vertiefen",
         "ua": "На цьому курсі у нас буде баланс між граматикою та лексикою. Кожне зайняття проводиться граматичний розбір заданої тематики та відшліфовуємо лексику. Спілкуватимемось багато. Різноманітні теми, побудова діалогів, питаннь та відповідей. ",
     },
     "b1-text": {
