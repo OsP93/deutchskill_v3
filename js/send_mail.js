@@ -24,11 +24,10 @@ document.getElementById('submit-btn').addEventListener('click', function () {
     var formMail = document.getElementById('form-mail').value;
     var formPhone = document.getElementById('form-phone').value;
     var formMessage = document.getElementById('form-msg').value;
-    //var telegramMessage = `Name: ${formName} \n Mail: ${formMail} \n Phone: ${formPhone} \n Message: ${formMessage}`;
-    var telegramMessage = `lalala <br \/> lalala`;
-    //var telegramMessage = `<pre>lalala \n lalala<\/pre>`;
+    var telegramMessage = `Hello! You have a new message from DEUTSCHSKILL:%0A%0AName: ${formName}%0AMail: ${formMail}%0APhone: ${formPhone}%0AMessage: ${formMessage}`;
+    //var telegramMessage = "1"+"%0A"+"2";
     console.log(telegramMessage);
-    fetch(`https://api.telegram.org/bot6455102088:AAHLMwUgU5GJqfBE1JqgJY66tXmmFhiwUHA/sendMessage?chat_id=-930718758&text=${telegramMessage}`)
+    fetch(`https://api.telegram.org/bot6455102088:AAHLMwUgU5GJqfBE1JqgJY66tXmmFhiwUHA/sendMessage?chat_id=-930718758&text=${telegramMessage}&'parse_mode'=>'HTML'`)
         .then(response => response.json());
     //------відправка повідомлення в чат
 
@@ -45,10 +44,10 @@ document.getElementById('submit-btn').addEventListener('click', function () {
             if (xhr.readyState === 4) {
                 if (xhr.status === 200) {
                     // Ваш код, який виконується після успішної відправки
-                    alert("Повідомлення відправлено успішно!");
+                    alert("⸜(*ˊᗜˋ*)⸝");
                 } else {
                     // Ваш код, який виконується в разі помилки
-                    alert("Виникла помилка під час відправки повідомлення.");
+                    alert("╮( ˘ ､ ˘ )╭");
                 }
             }
         };
