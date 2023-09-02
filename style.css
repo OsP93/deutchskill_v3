@@ -800,7 +800,7 @@ html {
 
 .profiles-exp--text {
     color: #FFF;
-    font-size: 1vw;
+    font-size: 1.2vw;
     font-family: 'Manrope', sans-serif;
 }
 
@@ -823,7 +823,8 @@ html {
 
 .profiles-education--text p {
     margin: 10px 0;
-    font-size: 0.8vw;
+    font-size: 1vw;
+    font-family: 'Manrope', sans-serif;
 }
 
 .education-title {
@@ -837,7 +838,7 @@ html {
 }
 
 .education-title--val {
-    font-size: 1vw;
+    font-size: 1.2vw;
 }
 
 .profiles-education--lang p {
@@ -918,11 +919,12 @@ html {
 
 .contact-form input {
     width: 100%;
-    font-size: 1.3em;
-    padding: 10px 30px;
+    font-size: 1em;
+    padding: 5px 15px;
     border-radius: 20px;
     margin-top: 1vh;
     margin-bottom: 3vh;
+
 }
 
 .contact-form input:focus {

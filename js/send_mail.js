@@ -5,7 +5,7 @@ const closeBtn = document.querySelector(".close-form")
 
 for (var i = 0; i < buttons.length; i++) {
     buttons[i].onclick = function () {
-        console.log(document.querySelector(".wrapper"));
+        //console.log(document.querySelector(".wrapper"));
         document.querySelector(".wrapper").classList.add('hidden-d');
         document.querySelector(".wrapper-form").classList.remove('hidden-d');
     };
@@ -16,9 +16,22 @@ closeBtn.addEventListener('click', function () {
     document.querySelector(".wrapper").classList.remove('hidden-d');
 })
 
-
+// відправка повідомлення на пошту та в чат телеграм
 document.getElementById('submit-btn').addEventListener('click', function () {
     console.log('hello!')
+    //відправка повідомлення в чат------
+    var formName = document.getElementById('form-name').value;
+    var formMail = document.getElementById('form-mail').value;
+    var formPhone = document.getElementById('form-phone').value;
+    var formMessage = document.getElementById('form-msg').value;
+    //var telegramMessage = `Name: ${formName} \n Mail: ${formMail} \n Phone: ${formPhone} \n Message: ${formMessage}`;
+    var telegramMessage = `lalala <br \/> lalala`;
+    //var telegramMessage = `<pre>lalala \n lalala<\/pre>`;
+    console.log(telegramMessage);
+    fetch(`https://api.telegram.org/bot6455102088:AAHLMwUgU5GJqfBE1JqgJY66tXmmFhiwUHA/sendMessage?chat_id=-930718758&text=${telegramMessage}`)
+        .then(response => response.json());
+    //------відправка повідомлення в чат
+
     var form = document.getElementById("myForm");
 
     form.addEventListener("submit", function (event) {
