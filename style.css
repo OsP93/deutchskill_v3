@@ -168,7 +168,7 @@ html {
     z-index: 300;
 }
 
-.navigation-logo img {
+.logo {
     height: 3vw;
 }
 
@@ -848,24 +848,33 @@ html {
 
 .invite {
     width: 100%;
+    background-color: #000;
+    background-image: url(src/img/Group_b.svg);
+    background-repeat: no-repeat;
+    background-position: -18px -7px;
+    background-size: 50%;
     display: flex;
+    flex-wrap: wrap;
     float: left;
-    border-radius: 60px;
-    background: #000;
-    margin: 3% 0;
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+    margin: 3% 0 0;
+    position: relative;
 }
 
 .invite-img {
-    width: 84%;
-    background-image: url(src/img/Group_b.svg);
+    width: 50%;
+    /* background-image: url(src/img/Group_b.svg); 
     background-repeat: no-repeat;
     background-position: -12px -7px;
     background-size: cover;
     border-radius: 60px;
+    */
 }
 
 .invite-content {
-    padding: 7%;
+    padding: 7% 3% 7% 7%;
+    width: 50%;
 }
 
 .invite-content--title {
@@ -874,13 +883,14 @@ html {
 
 .invite-content--text {
     color: #FFF;
+    margin: 10% 0;
 }
 
 .invite-content--img {
-    position: relative;
-    /* top: 317%; */
-    left: -16%;
-    bottom: -95px;
+    display: inline-block;
+    position: absolute;
+    left: 79%;
+    bottom: 38%;
 }
 
 .invite-content--btn {
@@ -896,6 +906,76 @@ html {
     color: #000;
 }
 
+.footer {
+    width: 99%;
+    margin: 8% 0.5% 0.5%;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #FCD338;
+    display: flex;
+
+}
+
+.footer-fild {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #000;
+    font-size: 1.5vw;
+    font-family: 'Manrope', sans-serif;
+}
+
+.footer-contacts {
+    margin: 4% 0;
+}
+
+.footer-contacts a {
+    color: #000;
+    font-size: 1.5vw;
+    font-family: 'Manrope', sans-serif;
+
+}
+
+.footer-contacts a:hover {
+    text-decoration: underline;
+}
+
+.footer-linkbar {
+    display: flex;
+    justify-content: center;
+    margin: 1% 0;
+    width: 10%;
+    flex-wrap: wrap;
+}
+
+.footer-linkbar--socialbtn {
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    padding: 8px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.footer-linkbar--socialbtn img {
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.footer-text {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid;
+    padding-top: 10px;
+}
+
+
+
 .contact-form {
     width: 50%;
     margin: 5% auto;
@@ -909,7 +989,7 @@ html {
 
 .contact-form-header {
     color: #FFF;
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     line-height: 118%;
@@ -924,7 +1004,6 @@ html {
     border-radius: 20px;
     margin-top: 1vh;
     margin-bottom: 3vh;
-
 }
 
 .contact-form input:focus {
@@ -938,7 +1017,7 @@ html {
 .form-message {
     width: 100%;
     height: 120px;
-    font-size: 1.3em;
+    font-size: 1em;
     border-radius: 20px;
     margin-top: 1vh;
     margin-bottom: 3vh;
@@ -1092,11 +1171,11 @@ form a:hover {
         font-size: 1.5rem;
     }
 
-    .invite-content--img {
+    /* .invite-content--img {
         position: relative;
         left: -14%;
         bottom: -54px;
-    }
+    } */
 }
 
 @media screen and (max-width: 1050px) {
@@ -1110,6 +1189,10 @@ form a:hover {
 
     .navigation-logo img {
         height: 100%;
+    }
+
+    .logo {
+        height: 3em;
     }
 
     .navigation-navbar--pill {
@@ -1208,14 +1291,22 @@ form a:hover {
         width: 100%;
     }
 
-    .invite-content--img {
+    /* .invite-content--img {
         position: relative;
         left: -4%;
         bottom: -35px;
-    }
+    } */
 
     .button--text {
         font-size: 1.8vw;
+    }
+
+    .footer-linkbar {
+        width: 30%;
+    }
+
+    .footer-contacts {
+        margin: 1% 0;
     }
 
     .contact-form {
@@ -1367,11 +1458,14 @@ form a:hover {
 
     .invite {
         border-radius: 30px;
+        background: #000;
     }
 
     .invite-content {
-        border-radius: 30px;
-        padding: 5% 5% 5% 37%;
+        width: 100%;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+        padding: 5% 5% 5% 38%;
         background-color: #000;
         background-image: url(src/img/Group_b.svg);
         background-size: 35vw;
@@ -1387,6 +1481,17 @@ form a:hover {
 
     .invite-content--title {
         font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .footer-fild,
+    .footer-fild a {
+        font-size: 1em;
+    }
+
+    .footer-linkbar--socialbtn img {
+        width: 1.2em;
+        height: 1.2em;
     }
 
     .contact-form {
@@ -1429,6 +1534,19 @@ form a:hover {
 
     .button--img {
         height: 7vw;
+    }
+
+    .footer-contacts {
+        width: 100%;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .footer-linkbar {
+        display: flex;
+        margin: 4% 0;
+        width: 100%;
+        justify-content: center;
     }
 
     .contact-form {

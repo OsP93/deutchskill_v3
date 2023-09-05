@@ -16,10 +16,10 @@ closeBtn.addEventListener('click', function () {
     document.querySelector(".wrapper").classList.remove('hidden-d');
 })
 
-// відправка повідомлення на пошту та в чат телеграм
+// send msg to mail and tg-chat
 document.getElementById('submit-btn').addEventListener('click', function () {
     console.log('hello!')
-    //відправка повідомлення в чат------
+    //send to tg-chat------
     var formName = document.getElementById('form-name').value;
     var formMail = document.getElementById('form-mail').value;
     var formPhone = document.getElementById('form-phone').value;
@@ -29,12 +29,12 @@ document.getElementById('submit-btn').addEventListener('click', function () {
     console.log(telegramMessage);
     fetch(`https://api.telegram.org/bot6455102088:AAHLMwUgU5GJqfBE1JqgJY66tXmmFhiwUHA/sendMessage?chat_id=-930718758&text=${telegramMessage}&'parse_mode'=>'HTML'`)
         .then(response => response.json());
-    //------відправка повідомлення в чат
+    //------send to tg-chat
 
     var form = document.getElementById("myForm");
 
     form.addEventListener("submit", function (event) {
-        event.preventDefault(); // Зупиняємо стандартну подію відправки форми
+        event.preventDefault(); // stop standart event 
 
         var formData = new FormData(form);
 
@@ -43,10 +43,10 @@ document.getElementById('submit-btn').addEventListener('click', function () {
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4) {
                 if (xhr.status === 200) {
-                    // Ваш код, який виконується після успішної відправки
+                    // successful send
                     alert("⸜(*ˊᗜˋ*)⸝");
                 } else {
-                    // Ваш код, який виконується в разі помилки
+                    // unsuccessful send
                     alert("╮( ˘ ､ ˘ )╭");
                 }
             }
@@ -59,11 +59,11 @@ document.getElementById('submit-btn').addEventListener('click', function () {
         var textarea = form.getElementsByTagName("textarea")[0];
 
         for (var i = 0; i < inputs.length; i++) {
-            inputs[i].value = ""; // Очищаємо значення полів вводу
+            inputs[i].value = ""; // clear inputs
         }
 
         if (textarea) {
-            textarea.value = ""; // Очищаємо значення текстового поля
+            textarea.value = ""; // clear textfild
         }
     };
 
