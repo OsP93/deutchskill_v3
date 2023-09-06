@@ -423,6 +423,31 @@
                     <label for="phone" class="lng-form-phone">Телефон:</label>
                     <input type="text" name="phone" id="form-phone" class="form-phone">
 
+                    <!-- custom checkbox -->
+                    <div class="control-group">
+                        <p>Выберите желаемый уровень:</p>
+                        <label class="control control-checkbox">
+                            A1
+                            <input type="checkbox" checked="checked" />
+                            <div class="control_indicator"></div>
+                        </label>
+                        <label class="control control-checkbox">
+                            A2
+                            <input type="checkbox" />
+                            <div class="control_indicator"></div>
+                        </label>
+                        <label class="control control-checkbox">
+                            B1
+                            <input type="checkbox" />
+                            <div class="control_indicator"></div>
+                        </label>
+                        <label class="control control-checkbox">
+                            Разговорный клуб
+                            <input type="checkbox" />
+                            <div class="control_indicator"></div>
+                        </label>
+                    </div>
+
                     <label for="message" class="lng-form-message">Сообщение:</label>
                     <textarea type="text" name="message" id="form-msg" class="form-message"></textarea>
 
@@ -447,3 +472,65 @@
 </body>
 
 </html>
+
+<!-- custom select
+<div class="select">
+    <select>
+        <option>--Select--</option>
+        <option>Hello 1</option>
+        <option>Hello 2</option>
+        <option>Hello 3</option>
+        <option>Hello 4</option>
+    </select>
+    <div class="select_arrow">
+    </div>
+</div>
+
+<style>.select {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 100%;
+}    .select select {
+        font-family: 'Arial';
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        padding: 10px 15px;
+        outline: 0;
+        border: 0px solid #000000;
+        border-radius: 0px;
+        background: #000000;
+        color: #FCD338;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+        .select select::-ms-expand {
+            display: none;
+        }
+        .select select:hover,
+        .select select:focus {
+            color: ;
+            background: #000000;
+        }
+        .select select:disabled {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+.select_arrow {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 8px 5px 0px 5px;
+    border-color: #FCD338 transparent transparent transparent;
+}
+.select select:hover ~ .select_arrow,
+.select select:focus ~ .select_arrow {
+    border-top-color: #FCD338;
+}
+.select select:disabled ~ .select_arrow {
+    border-top-color: #FCD338;;
+}</style> -->
