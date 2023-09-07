@@ -47,16 +47,32 @@
                                 <a href="#"><img src="src/ico/bxl_tiktok.svg" alt="tiktok_icon"></a>
                             </div>
                         </div>
-                        <div class="navigation-lang">
-                            <div class="navigation-lang--current">
+                        <!-- <div class="navigation-lang">
+                            <div class="select navigation-lang--current">
                                 <img src="src/ico/global.svg" alt="" class="navigation-lang--ico">
                                 <select class="navigation-lang--lang">
                                     <option value="ua">UA</option>
                                     <option value="ru" selected>RU</option>
                                     <option value="de">DE</option>
                                 </select>
+                                <div class="select_arrow">
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- custom select -->
+                        <div class="navigation-lang">
+                            <div class="select">
+                                <img src="src/ico/global.svg" alt="" class="navigation-lang--ico">
+                                <select class="navigation-lang--lang">
+                                    <option value="ua">UA</option>
+                                    <option value="ru" selected>RU</option>
+                                    <option value="de">DE</option>
+                                </select>
+                                <div class="select_arrow">
+                                </div>
                             </div>
                         </div>
+                        <!-- --- -->
                     </div>
                     <div class="header-navigation-mobile">
                         <div class="navigation-logo">
@@ -76,7 +92,7 @@
                                 <img src="src/ico/burger-menu.svg" alt="burger" class="burgerpill">
                                 <img src="src/ico/burger-menu_cross.svg" alt="cross" class="burgerpill-cross hidden-d">
                             </div>
-                            <div class="navigation-lang">
+                            <!-- <div class="navigation-lang">
                                 <div class="navigation-lang--current">
                                     <img src="src/ico/global.svg" alt="" class="navigation-lang--ico">
                                     <select class="navigation-lang--lang">
@@ -85,7 +101,21 @@
                                         <option value="de">DE</option>
                                     </select>
                                 </div>
+                            </div> -->
+                            <!-- custom select -->
+                            <div class="navigation-lang">
+                                <div class="select">
+                                    <img src="src/ico/global.svg" alt="" class="navigation-lang--ico">
+                                    <select class="navigation-lang--lang">
+                                        <option value="ua">UA</option>
+                                        <option value="ru" selected>RU</option>
+                                        <option value="de">DE</option>
+                                    </select>
+                                    <div class="select_arrow">
+                                    </div>
+                                </div>
                             </div>
+                            <!-- --- -->
                         </div>
                     </div>
                 </div>
@@ -423,7 +453,7 @@
                     <label for="phone" class="lng-form-phone">Телефон:</label>
                     <input type="text" name="phone" id="form-phone" class="form-phone">
 
-                    <!-- custom checkbox -->
+                    <!-- custom checkbox 
                     <div class="control-group">
                         <p>Выберите желаемый уровень:</p>
                         <label class="control control-checkbox">
@@ -447,13 +477,39 @@
                             <div class="control_indicator"></div>
                         </label>
                     </div>
+                    -->
+
+                    <!-- custom radiobutton -->
+                    <div class="control-group">
+                        <p class="rbheader lng-form-scheader">Выберите желаемый уровень:</p>
+                        <label class="control control-radio">
+                            A1
+                            <input type="radio" name="radio" checked="checked" />
+                            <div class="control_indicator"></div>
+                        </label>
+                        <label class="control control-radio">
+                            A2
+                            <input type="radio" name="radio" />
+                            <div class="control_indicator"></div>
+                        </label>
+                        <label class="control control-radio">
+                            B1
+                            <input type="radio" name="radio" />
+                            <div class="control_indicator"></div>
+                        </label>
+                        <label class="control control-radio">
+                            <p class="lng-form-sclub">Разговорный клуб</p>
+                            <input type="radio" name="radio" />
+                            <div class="control_indicator"></div>
+                        </label>
+                    </div>
 
                     <label for="message" class="lng-form-message">Сообщение:</label>
                     <textarea type="text" name="message" id="form-msg" class="form-message"></textarea>
 
-                    <input id="polit-checkbox" checked type="checkbox" class="polit-checkbox" name="checkbox" value="1">
+                    <!-- <input id="polit-checkbox" checked type="checkbox" class="polit-checkbox" name="checkbox" value="1">
                     <label for="checkbox" class="lng-form-checkbox"><a href="#">Я согласен с условиями использования
-                            и политикой конфиденциальности</a></label>
+                            и политикой конфиденциальности</a></label> -->
                     <br>
                     <button id="submit-btn" type="submit" class="submit-btn">
                         <div class="button--text lng-formbtn">Отправить</div>

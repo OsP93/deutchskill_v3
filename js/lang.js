@@ -137,12 +137,12 @@ const langArr = {
     "a2-text": {
         "ru": "На данном курсе у нас будет баланс между грамматикой и лексикой. Каждый урок мы разбираем грамматическую тему, но при этом и не забываем про беседу. Говорить мы будем много : для этого у нас есть много различных заданий на построение диалогов или ответы на вопросы.",
         "de": "<br><br><br>Habt ihr schon vom A2 Deutschkurs gehört? Dieser Kurs ist perfekt für diejenigen, die bereits die Grundlagen der deutschen Sprache beherrschen und ihre Kenntnisse auf das nächste Level heben möchten.Der A2- Kurs baut auf den im A1- Kurs erworbenen Fähigkeiten auf und hilft uns, unsere Deutschkenntnisse weiter zu vertiefen",
-        "ua": "На цьому курсі у нас буде баланс між граматикою та лексикою. Кожне зайняття проводиться граматичний розбір заданої тематики та відшліфовуємо лексику. Спілкуватимемось багато. Різноманітні теми, побудова діалогів, питаннь та відповідей. ",
+        "ua": "На цьому курсі у нас буде баланс між граматикою та лексикою. Кожне заняття проводиться граматичний розбір заданої тематики та відшліфовуємо лексику. Спілкуватимемось багато. Різноманітні теми, побудова діалогів, запитаннь та відповідей. ",
     },
     "b1-text": {
         "ru": "<br> На этом уровне, наша цель -начать быстро и правильно говорить, а не «я – магазин – покупать – бананы». Для этого мы с Вами пройдем всю грамматику уровня В1 легко и без «зубрежки». Ну и конечно же, мы выучим много-много лексики.",
         "de": "Unser B1-Kurs richtet an alle die bereits die Grundlagen des A1 und A2 Sprachkurses besitzen. Unser B1 Sprachniveau soll gezielt das fließende Sprechen, das Hör- und Leseverständnis, das Schreiben und die Grammatik verbessern und festigen. Neben alltäglichen Situationen sollen hier auch individuelle mit dem Sprachkurs abgestimmte Themengebiete besprochen werden. Das können zum Beispiel fachbezogene Themen sein, die einem im Arbeitsleben weiterhelfen können.Mit Hilfe von DeutschSkill lernen Sie online gemeinsam mit unseren Lehrkräften und anderen Kursteilnehmern die Deutsche Sprache. Also worauf warten? Starte jetzt mit dem Sprachkurs!",
-        "ua": "Мета даного курсу - розвиток швидкої та правильої вимови. Більше жодних «я - магазин - банан - купити». Для цього ми пройдемо всю граматику рівня В1. Легко та без «зубріння». Ну і звісно - лексика. Багато лексики.",
+        "ua": "Мета даного курсу - розвиток швидкої та правильної вимови. Більше жодних «я - магазин - банан - купити». Для цього ми пройдемо всю граматику рівня В1. Легко та без «зубріння». Ну і звісно - лексика. Багато лексики.",
     },
     "btn2": {
         "ru": "Узнать подробнее",
@@ -172,7 +172,7 @@ const langArr = {
     "club-text": {
         "ru": "Брось вызов немецкому: Клуб безудержного общения и словесных приключений!",
         "de": "Gemeinsam lernen,lachen und kommunizieren - werde Teil unseres Sprachclubs",
-        "ua": "Кинь виклик німецькій мові! Клуб нестримного пілкування та мовних пригод!",
+        "ua": "Кинь виклик німецькій мові! Клуб нестримного спілкування та мовних пригод!",
     },
     "club-sesion": {
         "ru": "3 месяца",
@@ -361,6 +361,18 @@ const langArr = {
         "ru": "Я согласен с условиями использования и политикой конфиденциальности",
         "de": "Ich stimme den Nutzungsbedingungen und Datenschutzbestimmungen zu",
         "ua": "Я погоджуюсь з умовами використання та політикою конфіденційності",
+    },
+
+    "form-scheader": {
+        "ru": "Выберите желаемый уровень:",
+        "de": "Gewünschtes Niveau:",
+        "ua": "Виберіть бажаний рівень:",
+    },
+
+    "form-sclub": {
+        "ru": "Разговорный клуб",
+        "de": "Sprachklub",
+        "ua": "Mовний клуб",
     },
 
 

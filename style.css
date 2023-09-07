@@ -233,6 +233,76 @@ html {
     font-weight: 600;
 }
 
+/* custom select */
+.select {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #000;
+    padding: 5px 25px 5px 15px;
+    border-radius: 20px;
+}
+
+.select img {
+    height: 2vw;
+}
+
+.select select {
+    font-family: 'Manrope', sans-serif;
+    display: inline-block;
+    width: 100%;
+    font-size: 1.5vw;
+    font-weight: bold;
+    cursor: pointer;
+    /* padding: 10px 15px;
+    outline: 0;
+    border: 0px solid #000000;
+    border-radius: 0px;
+    background: #000000; */
+    color: #FCD338;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.select select::-ms-expand {
+    display: none;
+}
+
+.select select:hover,
+.select select:focus {
+    background: #000000;
+}
+
+.select select:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.select_arrow {
+    position: absolute;
+    top: 41%;
+    right: 8%;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 0.7vw 0.5vw 0px 0.5vw;
+    border-color: #FCD338 transparent transparent transparent;
+}
+
+.select select:hover~.select_arrow,
+.select select:focus~.select_arrow {
+    border-top-color: #FCD338;
+}
+
+.select select:disabled~.select_arrow {
+    border-top-color: #FCD338;
+    ;
+}
+
+/* ---custom select--- */
+
 .navigation-links {
     display: flex;
 }
@@ -1025,7 +1095,7 @@ html {
     resize: vertical;
 }
 
-/*custom checkbox*/
+/*custom checkbox
 .control {
     font-family: 'Manrope',
         sans-serif;
@@ -1169,8 +1239,160 @@ html {
     animation-name: s-ripple-dup;
 }
 
-/*---custom checkbox---*/
+---custom checkbox---*/
+/* custom radiobutton */
+.control-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.rbheader {
+    margin-left: 2%;
+}
+
+.control-group p {
+    width: 100%;
+}
+
+.control {
+    font-family: 'Manrope', sans-serif;
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin: 3% 0;
+    padding-top: 3px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.control_indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #e6e6e6;
+    border: 0px solid #000000;
+    border-radius: undefinedpx;
+}
+
+.control:hover input~.control_indicator,
+.control input:focus~.control_indicator {
+    background: #cccccc;
+}
+
+.control input:checked~.control_indicator {
+    background: #FCD338;
+}
+
+.control:hover input:not([disabled]):checked~.control_indicator,
+.control input:checked:focus~.control_indicator {
+    background: #FCD338;
+}
+
+.control input:disabled~.control_indicator {
+    background: #e6e6e6;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.control_indicator:after {
+    box-sizing: unset;
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+.control input:checked~.control_indicator:after {
+    display: block;
+}
+
+.control-radio .control_indicator {
+    border-radius: 50%;
+}
+
+.control-radio .control_indicator:after {
+    left: 7px;
+    top: 7px;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background: #ffffff;
+    transition: background 250ms;
+}
+
+.control-radio input:disabled~.control_indicator:after {
+    background: #7b7b7b;
+}
+
+.control-radio .control_indicator::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: -1.3rem;
+    margin-top: -1.3rem;
+    background: #FCD338;
+    border-radius: 3rem;
+    opacity: 0.6;
+    z-index: 99999;
+    transform: scale(0);
+}
+
+@keyframes s-ripple {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    20% {
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0.01;
+        transform: scale(1);
+    }
+}
+
+@keyframes s-ripple-dup {
+    0% {
+        transform: scale(0);
+    }
+
+    30% {
+        transform: scale(1);
+    }
+
+    60% {
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
+.control-radio input+.control_indicator::before {
+    animation: s-ripple 250ms ease-out;
+}
+
+.control-radio input:checked+.control_indicator::before {
+    animation-name: s-ripple-dup;
+}
+
+/* ---custom radiobutton--- */
 .form-message:focus {
     box-shadow: 0 0 15px #FFF;
 }
@@ -1365,6 +1587,20 @@ form a:hover {
     }
 
 
+    /* custom select */
+    .select {
+        padding: 8px 32px 8px 20px;
+    }
+
+    .select select {
+        font-size: 2vw;
+    }
+
+    .select img {
+        height: 2vw;
+    }
+
+    /* ---custom select--- */
     .navigation-links {
         display: none;
     }
@@ -1462,7 +1698,7 @@ form a:hover {
 
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 770px) {
     .wrapper {
         padding: 0;
     }
@@ -1487,6 +1723,28 @@ form a:hover {
     .navigation-lang--current img {
         display: none;
     }
+
+    /* custom select */
+    .select {
+        padding: 8px 32px 8px 20px;
+    }
+
+    .select select {
+        font-size: 2.5vw;
+    }
+
+    .select img {
+        height: 2.5vw;
+    }
+
+    .select_arrow {
+        top: 41%;
+        right: 12%;
+        border-width: 1.5vw 1vw 0 1vw;
+
+    }
+
+    /* ---custom select--- */
 
     .header {
         border-radius: 0 0 30px 30px;
@@ -1655,6 +1913,27 @@ form a:hover {
         font-size: 2em;
     }
 
+    /* custom select */
+    .select {
+        padding: 8px 32px 8px 20px;
+    }
+
+    .select select {
+        font-size: 2em;
+    }
+
+    .select img {
+        height: 2em;
+    }
+
+    .select_arrow {
+        top: 41%;
+        right: 15%;
+        border-width: 1.2em 0.7em 0 0.7em;
+    }
+
+    /* ---custom select--- */
+
     .card-token p,
     .token {
         font-size: 4vw;
@@ -1698,5 +1977,18 @@ form a:hover {
     .contact-form {
         width: 95%;
         font-size: 1.1em;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .select {
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-color: #000;
+        padding: 5px 45px 5px 15px;
+        border-radius: 20px;
     }
 }
