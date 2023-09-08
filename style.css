@@ -690,7 +690,7 @@ html {
 
 .club-img {
     width: 70%;
-    background-image: url(src/img/shutterstock_conversation.png);
+    background-image: url(src/img/shutterstock_conversation.jpg);
     background-size: cover;
     border-radius: 60px;
 }
@@ -709,6 +709,10 @@ html {
     text-transform: uppercase;
 }
 
+.club-content--title {
+    margin: 0 3%;
+}
+
 .club-content--description,
 .teachers-content--text,
 .invite-content--text {
@@ -717,7 +721,7 @@ html {
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     line-height: 118%;
-    margin: 5% 0 5% 0;
+    margin: 5% 3%;
 }
 
 .club-content--tokens {
@@ -748,6 +752,7 @@ html {
     background-color: #EB382A;
     padding: 0.5vw;
     border-radius: 30px;
+    margin: 0 3%;
 }
 
 .button--text {
@@ -921,7 +926,7 @@ html {
     background-color: #000;
     background-image: url(src/img/Group_b.svg);
     background-repeat: no-repeat;
-    background-position: -18px -7px;
+    background-position: -25px -10px;
     background-size: 50%;
     display: flex;
     flex-wrap: wrap;
