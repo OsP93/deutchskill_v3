@@ -234,6 +234,11 @@ html {
 }
 
 /* custom select */
+.navigation-lang-custom {
+    margin-left: 10px;
+    width: 7vw;
+}
+
 .select {
     position: relative;
     height: 100%;
@@ -241,12 +246,13 @@ html {
     align-items: center;
     width: 100%;
     background-color: #000;
-    padding: 5px 25px 5px 15px;
-    border-radius: 20px;
+    /* padding: 5px 25px 5px 15px; */
+    padding: 8% 13%;
+    border-radius: 40px;
 }
 
 .select img {
-    height: 2vw;
+    height: 1.5vw;
 }
 
 .select select {
@@ -369,6 +375,11 @@ html {
     z-index: -1;
 }
 
+.navigation-navbar-mobile img {
+    width: 20px;
+    height: 20px;
+}
+
 .header-content {
     display: flex;
 }
@@ -474,7 +485,7 @@ html {
     display: inline-flex;
     align-items: center;
     background-color: #000;
-    padding: 0.5vw;
+    padding: 0.5vw 1vw;
     border-radius: 30px;
 }
 
@@ -732,7 +743,7 @@ html {
     width: 40%;
     display: inline-flex;
     align-items: center;
-    padding: 1vw;
+    padding: 1vw 1.5vw;
     background: #000;
     color: #FFF;
     margin: 3%;
@@ -743,14 +754,14 @@ html {
 }
 
 .token-img {
-    margin-right: 10%;
+    margin-right: 1.5vw;
 }
 
 .club-content--btn {
     display: inline-flex;
     align-items: center;
     background-color: #EB382A;
-    padding: 0.5vw;
+    padding: 0.5vw 1vw;
     border-radius: 30px;
     margin: 0 3%;
 }
@@ -785,6 +796,7 @@ html {
 
 .teachers-content--title {
     width: 100%;
+    margin-left: 5%;
 }
 
 .teachers-content--img {
@@ -972,7 +984,7 @@ html {
     display: inline-flex;
     align-items: center;
     background-color: #FCD338;
-    padding: 5px;
+    padding: 0.5vw 1vw;
     border-radius: 30px;
     margin-top: 10%;
 }
@@ -1593,16 +1605,21 @@ form a:hover {
 
 
     /* custom select */
+    .navigation-lang-custom {
+        width: 100%;
+        margin-left: 10px;
+    }
+
     .select {
-        padding: 8px 32px 8px 20px;
+        padding: 6px 10px;
     }
 
     .select select {
-        font-size: 2vw;
+        font-size: 20px;
     }
 
     .select img {
-        height: 2vw;
+        height: 20px;
     }
 
     /* ---custom select--- */
@@ -1718,7 +1735,6 @@ form a:hover {
 
     .navigation-lang--lang {
         font-size: 2vw;
-        margin-left: 0;
     }
 
     .navigation-lang--current {
@@ -1729,7 +1745,7 @@ form a:hover {
         display: none;
     }
 
-    /* custom select */
+    /* custom select 
     .select {
         padding: 8px 32px 8px 20px;
     }
@@ -1749,7 +1765,7 @@ form a:hover {
 
     }
 
-    /* ---custom select--- */
+    ---custom select--- */
 
     .header {
         border-radius: 0 0 30px 30px;
@@ -1774,6 +1790,10 @@ form a:hover {
         height: 100%;
     }
 
+    .header-button {
+        padding: 1vw 1.5vw;
+    }
+
     .coursescards,
     .club,
     .teachers {
@@ -1787,7 +1807,11 @@ form a:hover {
 
     .token {
         font-size: 3vw;
-        padding: 2vw;
+        padding: 2vw 2.5vw;
+    }
+
+    .token-img {
+        margin-right: 2.5vw;
     }
 
     .button--img {
@@ -1821,7 +1845,7 @@ form a:hover {
     .teachers-content--title,
     .invite-content--title {
         font-size: 6vw;
-        margin: 5vw 0 10vw;
+        margin: 5vw 3% 10vw;
     }
 
 
@@ -1918,7 +1942,7 @@ form a:hover {
         font-size: 2em;
     }
 
-    /* custom select */
+    /* custom select 
     .select {
         padding: 8px 32px 8px 20px;
     }
@@ -1937,7 +1961,7 @@ form a:hover {
         border-width: 1.2em 0.7em 0 0.7em;
     }
 
-    /* ---custom select--- */
+     ---custom select--- */
 
     .card-token p,
     .token {
@@ -1993,7 +2017,6 @@ form a:hover {
         align-items: center;
         width: 100%;
         background-color: #000;
-        padding: 5px 45px 5px 15px;
-        border-radius: 20px;
+        padding: 8% 13%;
     }
 }
