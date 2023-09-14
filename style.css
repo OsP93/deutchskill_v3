@@ -91,7 +91,8 @@ h6 {
 /*----------*/
 /*-- base --*/
 .wrapper,
-.wrapper-form {
+.wrapper-form,
+.wrapper-buying {
     width: 100%;
     padding: 0;
     margin: 0;
@@ -338,7 +339,8 @@ html {
     height: 20px;
 }
 
-.close-form {
+.close-form,
+.close-form-b {
     float: right;
     border: solid 2px #FCD338;
     align-items: center;
@@ -1063,7 +1065,8 @@ html {
 
 
 
-.contact-form {
+.contact-form,
+.buyingform {
     width: 50%;
     margin: 5% auto;
     padding: 1% 4% 2%;
@@ -1084,7 +1087,13 @@ html {
     margin-bottom: 3vh;
 }
 
-.contact-form input {
+.buyingform table {
+    width: 100%;
+}
+
+.contact-form input,
+.buyingform input,
+.buyingform select {
     width: 100%;
     font-size: 1em;
     padding: 5px 15px;
@@ -1093,12 +1102,18 @@ html {
     margin-bottom: 3vh;
 }
 
-.contact-form input:focus {
+.contact-form input:focus,
+.buyingform input:focus {
     box-shadow: 0 0 15px #FFF;
 }
 
-.contact-form input:hover {
+.contact-form input:hover,
+.buyingform input:hover {
     box-shadow: 0 0 15px #FFF;
+}
+
+.paypalBTN {
+    width: 10em;
 }
 
 .form-message {
@@ -1713,7 +1728,8 @@ form a:hover {
         margin: 1% 0;
     }
 
-    .contact-form {
+    .contact-form,
+    .buyingform {
         width: 60%;
     }
 
@@ -1927,7 +1943,8 @@ form a:hover {
         height: 1.2em;
     }
 
-    .contact-form {
+    .contact-form,
+    .buyingform {
         width: 90%;
     }
 
@@ -2003,7 +2020,8 @@ form a:hover {
         justify-content: center;
     }
 
-    .contact-form {
+    .contact-form,
+    .buyingform {
         width: 95%;
         font-size: 1.1em;
     }

@@ -24,7 +24,7 @@
 
 <body>
     <script src="js/lang.js"></script>
-    <div class="wrapper">
+    <div class="wrapper hidden-d">
 
         <section id="header">
             <header class="header">
@@ -432,7 +432,7 @@
             </div>
         </section>
     </div>
-    <div class="wrapper-form hidden-d">
+    <div class="wrapper-form //hidden-d">
         <section id="form">
             <div class="contact-form">
                 <div class="close-form">
@@ -517,6 +517,75 @@
                                 alt="club-content--btn"></a>
                     </button>
 
+                </form>
+            </div>
+        </section>
+    </div>
+    <div class="wrapper-buying">
+        <section id="buyingform">
+            <div class="buyingform">
+                <div class="close-form-b">
+                    <img src="src/ico/burger-menu_cross.svg" alt="cross" class="cross">
+                </div>
+                <div class="contact-form-header">
+                    <h3 class="lng-buying-header">Выбор и оплата курса</h3>
+                </div>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input type="hidden" name="hosted_button_id" value="RANS7ZYR2ATG4" />
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="hidden" name="on0" value="Select course" />
+                                Select course
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="os0">
+                                    <option value="A1">
+                                        A1 €12.00 EUR
+                                    </option>
+                                    <option value="A2">
+                                        A2 €12.00 EUR
+                                    </option>
+                                    <option value="B1">
+                                        B1 €14.00 EUR
+                                    </option>
+                                    <option value="Sprachklub">
+                                        Sprachklub €14.00 EUR
+                                    </option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="hidden" name="on1" value="Your name:" />
+                                Your name:
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="os1" maxLength="200" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="hidden" name="on2" value="Mail:" />
+                                Mail:
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="os2" maxLength="200" />
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="hidden" name="currency_code" value="EUR" />
+                    <input type="image" class="paypalBTN"
+                        src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_LG.gif" border="0" name="submit"
+                        title="PayPal - The safer, easier way to pay online!" alt="Buy Now" style="
+                                width: 10em;" />
                 </form>
             </div>
         </section>
